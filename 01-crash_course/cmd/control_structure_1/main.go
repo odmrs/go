@@ -16,10 +16,9 @@ func main() {
 	}
 
 	// Or using switch
-
 	switch {
 	case err != nil:
-		fmt.Printf(err.Error())
+		fmt.Println(err.Error())
 	case remainder == 0:
 		fmt.Printf("The result the integer division is %v\n", result)
 	default:
@@ -31,7 +30,7 @@ func intDivision(numerator int, denominator int) (int, int, error) {
 	var err error
 
 	if denominator == 0 {
-		err = errors.New("Can't divide a value by 0")
+		err = errors.New("can't divide a value by 0")
 		return 0, 0, err
 	}
 
