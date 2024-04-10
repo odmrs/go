@@ -79,21 +79,8 @@ func main() {
 	// fmt.Println(myMap2)
 
 	// FOR
-	for name, age := range myMap2 { // Get all key and values, by all map
-		fmt.Printf("Name: %v | Age: %v\n", name, age)
-	}
 
-	for k, y := range intArr {
-		fmt.Printf("Index: %v, Value: %v\n", k, y)
-	}
-
-	// var i int = 0
-	// for i < 10 {
-	// 	fmt.Println(i)
-	// 	i++
-	// }
-
-	for i := 0; i < 10; i++ {
-		fmt.Println(i)
+	for name := range myMap2 {
+		fmt.Printf("Name: %v\n", name)
 	}
 }
