@@ -9,7 +9,6 @@ func main() {
 	// var p = 0x140000b2020
 	// Normal variables
 	// var i = 123
-
 	// var p *int32 = new(int32)
 	// var i int32
 	//
