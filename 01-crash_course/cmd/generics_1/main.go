@@ -9,17 +9,17 @@ type sumSliceTypes interface {
 }
 
 func main() {
-	// Generics are use to avoid repetation of creation of functions
+	// Generics are used to avoid repetition of creation of functions
 	// Like create 5 functions just to change the type that function receive or return
 
 	var intSlice = []int{1, 2, 3}
-	fmt.Println(sumSlice[int](intSlice)) // don't need to specify the type to the sumSlice, the function can detect this easly
+	fmt.Println(sumSlice[int](intSlice)) // don't need to specify the type to the sumSlice, the function can detect this easily
 
 	var float32Slice = []float32{1, 2, 3}
-	fmt.Println(sumSlice[float32](float32Slice)) // don't need to specify the type to the sumSlice, the function can detect this easly
+	fmt.Println(sumSlice[float32](float32Slice)) // don't need to specify the type to the sumSlice, the function can detect this easily
 
 	var float64Slice = []float64{1, 2, 3}
-	fmt.Println(sumSlice[float64](float64Slice)) // don't need to specify the type to the sumSlice, the function can detect this easly
+	fmt.Println(sumSlice[float64](float64Slice)) // don't need to specify the type to the sumSlice, the function can detect this easily
 }
 
 func sumSlice[T sumSliceTypes](slice []T) T {
